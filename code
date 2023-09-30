@@ -1,0 +1,134 @@
+
+from os import linesep
+
+
+marcelas program..
+work on head
+;
+;
+;
+;
+;
+;
+THERES AN ERROR LINE 56, 62, 78, 70, AND I THINK 27 (not really sure why it didnt run)
+CHECK
+
+
+# Python program to check if year is a leap year or not
+
+year = 2000
+
+# To get year (integer input) from the user
+# year = int(input("Enter a year: "))
+
+# divided by 100 means century year (ending with 00)
+# century year divided by 400 is leap year
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+
+# not divided by 100 means not a century year
+# year divided by 4 is a leap year
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+
+# if not divided by both 400 (century year) and 4 (not century year)
+# year is not leap year
+else:
+    print("{0} is not a leap year".format(year))
+# Python Program to find the L.C.M. of two input number
+
+def compute_lcm(x, y):
+
+   # choose the greater number
+   if x > y:
+       greater = x
+   else:
+       greater = y
+
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater``
+           break
+       greater += 1
+
+   return lcm
+
+num1 = 54
+num2 = 24
+
+print("The L.C.M. is", compute_lcm(num1, num2))
+
+
+
+def recur_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recur_factorial(n-1)
+
+num = 7
+
+# check if the number is negative
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   print("The factorial of", num, "is", recur_factorial(num)
+
+INTO DONE 
+BODY AND LOOPS 
+;
+;
+;
+;
+;
+;
+;
+;
+REMEBER BODY ISNT VOID LOOP (consists of 5-8 linesep)
+
+# Python program to mail merger
+# Names are in the file names.txt
+# Body of the mail is in body.txt
+
+# open names.txt for reading
+with open("names.txt", 'r', encoding='utf-8') as names_file:
+
+    # open body.txt for reading
+    with open("body.txt", 'r', encoding='utf-8') as body_file:
+
+        # read entire content of the body
+        body = body_file.read()
+
+        # iterate over names
+        for name in names_file:
+            mail = "Hello " + name.strip() + "\n" + body
+
+            # write the mails to individual files
+            with open(name.strip()+".txt", 'w', encoding='utf-8') as mail_file:
+                mail_file.write(mail)
+                
+
+                import itertools
+
+list_1 = [1, 2, 3, 4]
+list_2 = ['a', 'b', 'c']
+
+# loop until the short loop stops
+for i,j in zip(list_1,list_2):
+    print(i,j)
+
+print("\n")
+
+# loop until the longer list stops
+for i,j in itertools.zip_longest(list_1,list_2):
+    print(i,j)
+    
+
+
+
+
+
+    VOID CLOSE 
+    SETUP FOR BREAKING LISTS 
